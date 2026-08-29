@@ -1,15 +1,24 @@
 {
   "name": "Water Battle 💧",
   "short_name": "Water Battle",
+  "description": "Una divertida batalla de hidratación entre Antony y Yvett 💧",
+  "id": "./",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#eef8ff",
   "theme_color": "#168bdc",
   "orientation": "portrait",
+  "lang": "es",
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "./icon-192.png",
       "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]

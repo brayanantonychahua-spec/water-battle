@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Water Battle 💧</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         INTRO
+    ========================== -->
+
+    <section id="intro">
+
+        <h1>ANTONY & YVETT</h1>
+
+    </section>
+
+
+    <!-- =========================
+         CARGA
+    ========================== -->
+
+    <section id="loading">
+
+        <div class="loading-content">
+
+            <h1>💧 WATER BATTLE</h1>
+
+            <p id="loadingText">
+                Cargando... 0%
+            </p>
+
+            <div class="progress-bar">
+
+                <div class="progress"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         LOGIN
+    ========================== -->
+
+    <section id="login">
+
+        <div class="login-content">
+
+            <h1>💧 WATER BATTLE</h1>
+
+            <p>Inicia sesión para continuar</p>
+
+            <input
+                type="email"
+                id="emailInput"
+                placeholder="Correo electrónico"
+                autocomplete="username"
+            >
+
+            <input
+                type="password"
+                id="passwordInput"
+                placeholder="Contraseña"
+                autocomplete="current-password"
+            >
+
+            <button id="loginButton">
+                INICIAR SESIÓN
+            </button>
+
+            <p id="loginMessage"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MENÚ
+    ========================== -->
+
+    <section id="menu">
+
+        <div class="menu-content">
+
+            <h1>💧 WATER BATTLE</h1>
+
+            <p id="welcomeUser">
+                Bienvenido
+            </p>
+
+            <button id="waterBattleButton">
+                ⚔️ BATALLA DE AGUA
+            </button>
+
+            <div class="coming-soon">
+                🔒 Próximamente
+            </div>
+
+            <button id="logoutButton" class="logout-button">
+                🚪 CERRAR SESIÓN
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         BATALLA
+    ========================== -->
+
+    <section id="waterBattle">
+
+        <div class="battle-content">
+
+            <div class="battle-header">
+
+                <button
+                    id="backToMenu"
+                    class="back-button">
+                    ← MENÚ
+                </button>
+
+                <h1>💧 BATALLA DE HOY</h1>
+
+            </div>
+
+
+            <div class="players">
+
+
+                <!-- =====================
+                     ANTONY
+                ====================== -->
+
+                <div class="player">
+
+                    <h2>😎 ANTONY</h2>
+
+                    <div class="amount">
+                        0 ml
+                    </div>
+
+                    <div class="progress-player">
+
+                        <div class="progress-player-fill"></div>
+
+                    </div>
+
+                    <div class="percentage">
+                        0%
+                    </div>
+
+
+                    <div class="human-bottle">
+
+                        <div class="water">
+
+                            <div class="wave"></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <p class="goal-text">
+                        0 / 2,000 ml
+                    </p>
+
+
+                    <button class="register-button">
+                        💧 REGISTRAR AGUA
+                    </button>
+
+
+                    <div class="water-history">
+
+                        <h3>
+                            Registros de Antony
+                        </h3>
+
+                        <div class="history-list"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =====================
+                     YVETT
+                ====================== -->
+
+                <div class="player">
+
+                    <h2>😈 YVETT</h2>
+
+                    <div class="amount">
+                        0 ml
+                    </div>
+
+                    <div class="progress-player">
+
+                        <div class="progress-player-fill"></div>
+
+                    </div>
+
+                    <div class="percentage">
+                        0%
+                    </div>
+
+
+                    <div class="human-bottle">
+
+                        <div class="water">
+
+                            <div class="wave"></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <p class="goal-text">
+                        0 / 2,000 ml
+                    </p>
+
+
+                    <button class="register-button">
+                        💧 REGISTRAR AGUA
+                    </button>
+
+
+                    <div class="water-history">
+
+                        <h3>
+                            Registros de Yvett
+                        </h3>
+
+                        <div class="history-list"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================
+                 GANADOR
+            ====================== -->
+
+            <div class="winner">
+                🤝 EMPATE
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MODAL AGUA
+    ========================== -->
+
+    <div id="waterModal" class="modal">
+
+        <div class="modal-content">
+
+            <h2>
+                💧 REGISTRAR AGUA
+            </h2>
+
+            <p>
+                ¿Cuánto tomaste?
+            </p>
+
+            <input
+                type="number"
+                id="waterInput"
+                placeholder="Cantidad en ml"
+                min="1"
+            >
+
+            <button id="addWater">
+                AGREGAR 💧
+            </button>
+
+            <button id="cancelWater">
+                CANCELAR
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         APP
+    ========================== -->
+
+    <script
+        type="module"
+        src="app.js">
+    </script>
+
+</body>
+
+</html>

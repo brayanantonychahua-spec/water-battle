@@ -1,0 +1,937 @@
+/* ======================================================
+   RESET
+====================================================== */
+
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+/* ======================================================
+   BODY
+====================================================== */
+
+body {
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    background: black;
+
+    color: white;
+
+}
+
+
+/* ======================================================
+   INTRO
+====================================================== */
+
+#intro {
+
+    width: 100%;
+
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background: black;
+
+}
+
+
+#intro h1 {
+
+    font-size: 32px;
+
+    font-weight: 500;
+
+    letter-spacing: 4px;
+
+}
+
+
+/* ======================================================
+   LOADING
+====================================================== */
+
+#loading {
+
+    display: none;
+
+    width: 100%;
+
+    height: 100vh;
+
+    background-image:
+        url("images/pareja.jpeg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    position: relative;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+#loading::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        rgba(0, 0, 0, 0.45);
+
+}
+
+
+.loading-content {
+
+    position: absolute;
+
+    bottom: 60px;
+
+    width: 85%;
+
+    max-width: 500px;
+
+    text-align: center;
+
+    z-index: 2;
+
+}
+
+
+.loading-content h1 {
+
+    font-size: 38px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.loading-content p {
+
+    margin-bottom: 15px;
+
+}
+
+
+.progress-bar {
+
+    width: 100%;
+
+    height: 12px;
+
+    background:
+        rgba(255,255,255,0.3);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+}
+
+
+.progress {
+
+    width: 0%;
+
+    height: 100%;
+
+    background: white;
+
+    border-radius: 20px;
+
+    transition:
+        width 0.1s linear;
+
+}
+
+
+/* ======================================================
+   LOGIN
+====================================================== */
+
+#login {
+
+    display: none;
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    background: #eef8ff;
+
+    color: #123;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+.login-content {
+
+    width: 85%;
+
+    max-width: 400px;
+
+}
+
+
+.login-content h1 {
+
+    font-size: 36px;
+
+    color: #168bdc;
+
+    margin-bottom: 10px;
+
+}
+
+
+.login-content > p {
+
+    color: #667;
+
+    margin-bottom: 30px;
+
+}
+
+
+.login-content input {
+
+    width: 100%;
+
+    padding: 16px;
+
+    margin-bottom: 12px;
+
+    border: 2px solid #dcecf5;
+
+    border-radius: 14px;
+
+    font-size: 16px;
+
+    outline: none;
+
+}
+
+
+.login-content input:focus {
+
+    border-color: #168bdc;
+
+}
+
+
+#loginButton {
+
+    width: 100%;
+
+    padding: 17px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: #168bdc;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+#loginButton:active {
+
+    transform: scale(0.98);
+
+}
+
+
+#loginMessage {
+
+    min-height: 20px;
+
+    margin-top: 15px;
+
+    color: #777;
+
+}
+
+
+/* ======================================================
+   MENÚ
+====================================================== */
+
+#menu {
+
+    display: none;
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    background: #eef8ff;
+
+    color: #123;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+.menu-content {
+
+    width: 85%;
+
+    max-width: 400px;
+
+}
+
+
+.menu-content h1 {
+
+    font-size: 36px;
+
+    color: #168bdc;
+
+    margin-bottom: 10px;
+
+}
+
+
+#welcomeUser {
+
+    color: #667;
+
+    margin-bottom: 40px;
+
+}
+
+
+#waterBattleButton {
+
+    width: 100%;
+
+    padding: 20px;
+
+    border: none;
+
+    border-radius: 18px;
+
+    background: #168bdc;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.coming-soon {
+
+    margin-top: 30px;
+
+    color: #999;
+
+}
+
+
+.logout-button {
+
+    width: 100%;
+
+    margin-top: 35px;
+
+    padding: 13px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #888;
+
+    cursor: pointer;
+
+}
+
+
+/* ======================================================
+   BATALLA
+====================================================== */
+
+#waterBattle {
+
+    display: none;
+
+    min-height: 100vh;
+
+    background: #eef8ff;
+
+    color: #123;
+
+    padding: 30px 15px;
+
+}
+
+
+.battle-content {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+
+}
+
+
+.battle-header {
+
+    position: relative;
+
+    margin-bottom: 30px;
+
+}
+
+
+.battle-content > h1 {
+
+    color: #168bdc;
+
+}
+
+
+.battle-header h1 {
+
+    color: #168bdc;
+
+}
+
+
+.back-button {
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    border: none;
+
+    background: white;
+
+    color: #168bdc;
+
+    padding: 10px 15px;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0,0,0,0.08);
+
+}
+
+
+.players {
+
+    display: flex;
+
+    gap: 20px;
+
+}
+
+
+.player {
+
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 25px 20px;
+
+    flex: 1;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0,0,0,0.08);
+
+}
+
+
+.player h2 {
+
+    margin-bottom: 20px;
+
+}
+
+
+.amount {
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    color: #168bdc;
+
+}
+
+
+.progress-player {
+
+    width: 100%;
+
+    height: 12px;
+
+    background: #dcecf5;
+
+    border-radius: 20px;
+
+    margin: 15px 0 8px;
+
+    overflow: hidden;
+
+}
+
+
+.progress-player-fill {
+
+    width: 0%;
+
+    height: 100%;
+
+    background: #168bdc;
+
+    border-radius: 20px;
+
+    transition:
+        width 0.8s ease;
+
+}
+
+
+.percentage {
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* ======================================================
+   BOTELLA
+====================================================== */
+
+.human-bottle {
+
+    width: 120px;
+
+    height: 230px;
+
+    margin: 20px auto;
+
+    position: relative;
+
+    border:
+        4px solid #168bdc;
+
+    border-radius:
+        50px 50px 35px 35px;
+
+    overflow: hidden;
+
+    background:
+        rgba(255,255,255,0.4);
+
+}
+
+
+.human-bottle .water {
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 0%;
+
+    background:
+        rgba(22,139,220,0.75);
+
+    transition:
+        height 0.8s ease;
+
+}
+
+
+.wave {
+
+    position: absolute;
+
+    top: -8px;
+
+    left: -10%;
+
+    width: 120%;
+
+    height: 20px;
+
+    background:
+        rgba(255,255,255,0.5);
+
+    border-radius: 50%;
+
+    animation:
+        waveMove 2s
+        infinite
+        ease-in-out;
+
+}
+
+
+@keyframes waveMove {
+
+    0% {
+
+        transform:
+            translateX(-5%);
+
+    }
+
+    50% {
+
+        transform:
+            translateX(5%);
+
+    }
+
+    100% {
+
+        transform:
+            translateX(-5%);
+
+    }
+
+}
+
+
+/* ======================================================
+   REGISTRAR
+====================================================== */
+
+.register-button {
+
+    width: 100%;
+
+    border: none;
+
+    background: #168bdc;
+
+    color: white;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.register-button:active {
+
+    transform:
+        scale(0.98);
+
+}
+
+
+/* ======================================================
+   HISTORIAL
+====================================================== */
+
+.water-history {
+
+    margin-top: 20px;
+
+    text-align: left;
+
+}
+
+
+.water-history h3 {
+
+    font-size: 14px;
+
+    color: #777;
+
+    margin-bottom: 10px;
+
+}
+
+
+.history-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: #f4faff;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    margin-bottom: 6px;
+
+    font-size: 14px;
+
+}
+
+
+.delete-water {
+
+    border: none;
+
+    background: transparent;
+
+    color: #e44;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+}
+
+
+/* ======================================================
+   GANADOR
+====================================================== */
+
+.winner {
+
+    margin-top: 25px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 18px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+}
+
+
+/* ======================================================
+   MODAL
+====================================================== */
+
+.modal {
+
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(0,0,0,0.55);
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 1000;
+
+}
+
+
+.modal-content {
+
+    width: 85%;
+
+    max-width: 350px;
+
+    background: white;
+
+    color: #123;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+}
+
+
+.modal-content h2 {
+
+    color: #168bdc;
+
+    margin-bottom: 15px;
+
+}
+
+
+.modal-content p {
+
+    margin-bottom: 15px;
+
+}
+
+
+.modal-content input {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border:
+        2px solid #dcecf5;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+
+    text-align: center;
+
+    margin-bottom: 15px;
+
+}
+
+
+#addWater {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #168bdc;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+    cursor: pointer;
+
+}
+
+
+#cancelWater {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #777;
+
+    cursor: pointer;
+
+}
+
+
+/* ======================================================
+   MÓVIL
+====================================================== */
+
+@media (max-width: 600px) {
+
+    .players {
+
+        flex-direction: column;
+
+    }
+
+
+    .battle-header h1 {
+
+        font-size: 26px;
+
+        padding-top: 5px;
+
+    }
+
+
+    .back-button {
+
+        position: static;
+
+        margin-bottom: 15px;
+
+    }
+
+}

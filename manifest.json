@@ -1,0 +1,10 @@
+{
+  "name": "Water Battle 💧",
+  "short_name": "Water Battle",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#eef8ff",
+  "theme_color": "#168bdc",
+  "orientation": "portrait",
+  "icons": []
+}
